@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: Roboto, Raleway sans-serif;
+  font-family: Roboto, Raleway, sans-serif;
   font-size: 16px;
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
@@ -53,6 +53,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  text-decoration: none;
 }
 .nav__link:hover,
 .contakts__link:hover,
@@ -140,7 +141,7 @@ body {
 .our-team__title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -163,9 +164,11 @@ body {
 }
 .our-team__item-title {
   font-weight: 500;
+  margin-top: 30px;
 }
 .our-team__item-text {
   color: var(--secondary-text-color);
+  margin-top: 10px;
 }
 
 /* Footer */
