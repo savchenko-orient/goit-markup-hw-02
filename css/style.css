@@ -56,11 +56,14 @@ body {
   text-decoration: none;
 }
 .nav__link:hover,
+.nav__link:focus,
 .contakts__link:hover,
 .contakts__link:focus {
   color: var(--button-hover-color);
 }
-
+.nav__link[href="#"] {
+  color: var(--button-hover-color);
+}
 /* Main */
 /* Hero */
 .hero {
@@ -148,9 +151,9 @@ body {
 .our-team__item {
   width: 270px;
   height: 368px;
-  line-height: 1.18;
+  /* line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03em; */
   background-color: var(--primary-white-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -163,10 +166,21 @@ body {
   height: 260px;
 }
 .our-team__item-title {
+  font-family: "Roboto";
+  font-size: 16px;
   font-weight: 500;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
   margin-top: 30px;
 }
 .our-team__item-text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-top: 10px;
 }
@@ -225,7 +239,8 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
-.filter-btn:hover {
+.filter-btn:hover,
+.filter-btn:focus {
   color: var(--primary-white-color);
   background-color: var(--button-hover-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
